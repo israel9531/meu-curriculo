@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfólio - Israel Oliveira</title>
+</head>
+<body>
+  <section class="nav-top">
+    <nav class="nav-center">
+      <ul class="nav-links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="/projetos.html">Projetos</a></li>
+        <li><a href="/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="profile">
+    <img src="img/eu2.jpg" alt="foto de israel" class="foto">
+    <div class="text">
+      <h2>Israel Oliveira</h2>
+      <p>Desenvolvedor e entusiasta de tecnologia, com foco em desenvolvimento web, automação e soluções inovadoras para a área de TI.</p>
+      <p>Estudante de Análise e Desenvolvimento de Sistemas | 3º Semestre | Unopar</p>
+
+      <div class="social-buttons">
+        <a href="URL_DO_SEU_GITHUB" target="_blank" class="button github">GitHub</a>
+        <a href="URL_DO_SEU_LINKEDIN" target="_blank" class="button linkedin">LinkedIn</a>
+        <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card-info">
+      <div class="card-header" onclick="toggleCard('experiencia')">
+        <h3>Experiência Profissional</h3>
+        <span id="seta-experiencia" class="seta">▼</span>
+      </div>
+      <ul id="experiencia" class="card-content">
+        <li>
+          <strong>Transportes Santa Maria Ltda.</strong>
+          <span class="cargo-ano">Jovem Aprendiz (2014 - 2015)</span>
+          <ul class="atividades">
+<li class="atividade-titulo">Atividades exercidas</li>
+<li>Cobrança de passagens</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Clube Brilhante</strong>
+          <span class="cargo-ano">Serviços Gerais (2022 - Atual)</span>
+          <ul class="atividades">
+            <li>Manutenção e limpeza de áreas comuns</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="card-info">
+      <div class="card-header" onclick="toggleCard('conhecimentos')">
+        <h3>Conhecimentos</h3>
+        <span id="seta-conhecimentos" class="seta">▼</span>
+      </div>
+      <ul id="conhecimentos" class="card-content">
+        <li>
+          <strong>Python:</strong>
+          <ul class="sub-list">
+            <li>Machine Learning</li>
+            <li>Banco de Dados</li>
+            <li>Automação de Tarefas</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Banco de Dados:</strong>
+          <ul class="sub-list">
+            <li>MySQL</li>
+            <li>MariaDB</li>
+            <li>SQLite</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Front-End:</strong>
+          <ul class="sub-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Ferramentas:</strong>
+          <ul class="sub-list">
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Docker</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Todos os direitos reservados &copy; <span id="ano"></span> | Desenvolvido por Israel Oliveira</p>
+  </footer>
+
+  <script>
+    function toggleCard(id) {
+      const content = document.getElementById(id);
+      const seta = document.getElementById(`seta-${id}`);
+
+      content.classList.toggle('show');
+      seta.classList.toggle('rotacionada');
+    }
+
+    // Atualiza o ano no footer
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

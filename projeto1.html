@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="projetos.css">
+  <title>Carrossel Projeto</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<body>
+  <!-- Barra de navegação -->
+  <section class="nav-top">
+    <nav class="nav-center">
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Carrossel -->
+  <section class="projeto">
+    <div class="projeto-texto">
+      <div class="carousel">
+        <div class="slides">
+
+          <!-- Slide 1 -->
+          <div class="slide">
+            <img src="/img/analise.png" alt="analise">
+            <p>Entre 2016 e 2025, a frota do CTCP passou por transformações significativas. Esta análise feita com Python e suas bibliotecas, revela o quanto essas mudanças afetaram a eficiência e a qualidade do transporte em Pelotas</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="/img/DSCN2363.JPG" alt="grafico">
+            <p>Os dados dessa análise foram colhidos em pesquisa de campo, registrando os coletivos e os dados em tabelas</p>
+          </div>
+
+          <!-- Slide 3 - Tecnologias Utilizadas -->
+          <div class="slide">
+            <div class="tech-slide">
+              <h3>Tecnologias Utilizadas</h3>
+              <div class="tech-container">
+                <div class="tech-card">
+                  <img src="/img/logo.png" alt="Python">
+                  <h3>Python</h3>
+                  <p>Linguagem principal para análise e visualização.</p>
+                </div>
+                <div class="tech-card">
+                  <img src="/img/images.png" alt="Pandas">
+                  <h3>Pandas</h3>
+                  <p>Manipulação e estruturação de dados.</p>
+                </div>
+                <div class="tech-card">
+                  <img src="/img/1679493396295.png" alt="Matplotlib">
+                  <h3>Matplotlib</h3>
+                  <p>Geração de gráficos e comparações visuais.</p>
+                </div>
+                <div class="tech-card">
+                  <img src="/img/0_L-3fpSFwO9OLs03S.png" alt="Streamlit">
+                  <h3>Streamlit</h3>
+                  <p>App web para visualização interativa dos dados.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 - Principais Resultados -->
+          <div class="slide">
+            <div class="resultados-slide">
+              <h3>Principais Resultados (2016 → 2025)</h3>
+              <div class="resultados-container">
+                <div class="resultado-card" 
+                     data-title="Idade Média da Frota" 
+                     data-content="<p>No periodo de nove anos, a frota apresentou um aumento expressivo de idade média, passando de 3,37 anos para 8,16 anos.
+Os dois gráficos abaixo comparam a evolução desses dados nas seis empresas que compõem o consórcio.</p><img src='/img/idade_media_por_empresa_2016_2025.png'>">
+                  <h4>Idade Média (anos)</h4>
+                  <p><strong>3,37 → 8,16</strong></p>
+                  <span class="variacao negativa">+142%</span>
+                </div>
+                <div class="resultado-card" 
+                     data-title="Frota Total" 
+                     data-content="<p>Decréscimo de 75 ônibus na frota, entre 2016 e 2025. Impactando diretamente na qualidade do serviço. Com menos coletivos, consequentemente a redução de horários.</p><img src='/img/frota_por_empresa_2016_2025.png'>">
+                  <h4>Frota Total (unidades)</h4>
+                  <p><strong>220 → 145</strong></p>
+                  <span class="variacao negativa">-34%</span>
+                </div>
+                <div class="resultado-card" 
+                     data-title="Elevador" 
+                     data-content="<p>O percentual de veículos com elevador aumentou de 76,8% para 98,6%. Atualmente, apenas dois ônibus não possuem tal equipamento: 435 e 436.</p><img src='/img/ar_2016_2025.png'>">
+                  <h4>Elevador (%)</h4>
+                  <p><strong>76,8 → 98,6</strong></p>
+                  <span class="variacao positiva">+21,8 p.p.</span>
+                </div>
+                <div class="resultado-card" 
+                     data-title="Ar-Condicionado" 
+                     data-content="<p>O percentual de veículos com ar-condicionado caiu de 5,5% para 0,7%.</p><img src='/img/elevador_ar_2016_2025.png'>">
+                  <h4>Ar-Condicionado (%)</h4>
+                  <p><strong>5,5 → 0,7</strong></p>
+                  <span class="variacao negativa">-4,8 p.p.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <!-- Slide Final - Links para App Web e GitHub -->
+<div class="slide">
+  <div class="links-projeto">
+    <h3>Explore Mais</h3>
+    <p>Veja o projeto completo e interaja com os dados:</p>
+    <a href="https://dadosctcp20162025.streamlit.app" target="_blank" class="btn-link">
+      <i class="fas fa-chart-line"></i> Abrir App Web
+    </a>
+    <a href="https://github.com/israel9531/analise_ctcp_2016_2025" target="_blank" class="btn-link github">
+      <i class="fab fa-github"></i> Ver Código no GitHub
+    </a>
+  </div>
+</div>
+
+        </div>
+
+        <!-- Botões do carrossel -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Detalhes</h2>
+      <div id="modal-body">
+        <p>Aqui vão as informações detalhadas e gráficos...</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="carrossel.js"></script>
+</body>
+</html>
